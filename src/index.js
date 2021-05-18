@@ -1,1 +1,1 @@
-const util = {}
+export * from "./type";
