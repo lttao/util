@@ -14,6 +14,11 @@ export function isArray(value) {
     return getType(value) === 'array' ? true : false
 }
 
+// 是否空数组
+export function isEmptyArrary(value) {
+    return isArray(value) && !value.length ? true : false
+}
+
 // 是否为空
 export function isEmpty(value) {
     return [undefined, null, ''].includes(value) ? true : false
